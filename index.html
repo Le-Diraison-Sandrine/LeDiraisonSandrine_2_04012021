@@ -3,17 +3,58 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
-        <title>Premiers tests du CSS</title>
+        <title>Reservia</title>
     </head>
 
     <body>
         <header>
 
+            <div id="logo">
+                <img src="images/logo/Reservia.svg" alt="Logo Reservia" />
+            </div>
+
+            <nav>
+                <ul>
+                    <li>Hébergements</li>
+                    <li>Activités</li>
+                    <li>S'inscrire</li>
+                </ul>
+            </nav>
+
         </header>
 
-        <nav>
+        <section>
 
-        </nav>
+            <div id="rechercher">
+
+                <p><strong>Trouver votre hébergement pour des vacances de rêve</strong></p>
+                <p>En plein centre ville ou en pleine nature</p>
+
+                    <form method="POST" action="traitement.php">
+                        <p>
+                            <label for="rechercher"></label><input type="search" name="rechercher" id="rechercher" />
+                        </p>
+                    </form>
+
+            </div>
+
+            <div id="filtres">
+
+                <p>Filtres</p>
+
+                <ul>
+                    <li>Économique</li>
+                    <li>Familial</li>
+                    <li>Romantique</li>
+                    <li>Animaux autorisés</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    <div id="bloc_page">
 
         <section>
             <article>
@@ -26,9 +67,12 @@
 
         </section>
 
+
         <section>
-            
+
         </section>
+
+    </div>
 
         <footer>
 
