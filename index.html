@@ -27,12 +27,18 @@
 
             <div id="rechercher">
 
-                <p><strong>Trouver votre hébergement pour des vacances de rêve</strong></p>
-                <p>En plein centre ville ou en pleine nature</p>
+                <p><strong>Trouver votre hébergement pour des vacances de rêve</strong><br />
+                    En plein centre ville ou en pleine nature
+                </p>
+                    <div id="icon_map">
+                        <img src="images/icons/map.png" alt="Icône map" />
+                    </div>
 
                     <form method="POST" action="traitement.php">
                         <p>
-                            <label for="rechercher"></label><input type="search" name="rechercher" id="rechercher" />
+                            <label for="rechercher"></label>
+                            <input type="search" name="rechercher" placeholder="Marseille, France" id="rechercher" />
+                            <input type="submit" value="Rechercher"
                         </p>
                     </form>
 
