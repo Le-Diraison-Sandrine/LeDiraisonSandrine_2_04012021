@@ -2,43 +2,54 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="stylereservia.css" />
+        <!--<link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">-->
         <title>Reservia</title>
     </head>
 
     <body>
+
         <header>
 
             <div id="logo">
-                <img src="images/logo/Reservia.svg" alt="Logo Reservia" />
+
+                <img src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
+
             </div>
 
             <nav>
-                <ul>
-                    <li>Hébergements</li>
-                    <li>Activités</li>
-                    <li>S'inscrire</li>
-                </ul>
+                    <div id="ancres">
+
+                        <a href="#hebergements">Hébergements</a><br />
+                        <a href="#activites">Activités</a><br />
+                        S'inscrire
+
+                    </div>
+                
             </nav>
 
         </header>
 
         <section>
 
-            <div id="rechercher">
+            <div id="recherche">
 
+                <!--Titre et sous titre Recherche-->
                 <p><strong>Trouver votre hébergement pour des vacances de rêve</strong><br />
                     En plein centre ville ou en pleine nature
                 </p>
-                    <div id="icon_map">
-                        <img src="images/icons/map.png" alt="Icône map" />
-                    </div>
 
+                <p><!--icône map-->
+                <i class="fas fa-map-marker-alt"></i>
+                </p>
+
+
+                    <!--Champ de recherche + bouton Rechercher-->
                     <form method="POST" action="traitement.php">
                         <p>
                             <label for="rechercher"></label>
                             <input type="search" name="rechercher" placeholder="Marseille, France" id="rechercher" />
-                            <input type="submit" value="Rechercher"
+                            <input type="submit" value="Rechercher" />
                         </p>
                     </form>
 
@@ -48,13 +59,29 @@
 
                 <p>Filtres</p>
 
-                <ul>
-                    <li>Économique</li>
-                    <li>Familial</li>
-                    <li>Romantique</li>
-                    <li>Animaux autorisés</li>
+                <p><!--les liens des icônes-->
 
-                </ul>
+                <i class="fas fa-money-bill-wave"></i>
+                <i class="fas fa-child"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-dog"></i>
+
+                </p>
+
+                <!--Liste des Filtres-->
+                <p id="liste_filtres">
+                    
+                    Économique<br />
+                    Familial<br />
+                    Romantique<br />
+                    Animaux autorisés<br />
+
+                </p>
+
+                <p><!--Réponse-->
+                    <i class="fas fa-info-circle"></i><!--Icône rond avec un i-->
+                    Plus de 500 logements sont disponibles dans cette ville
+                </p>
 
             </div>
 
@@ -63,24 +90,128 @@
     <div id="bloc_page">
 
         <section>
-            <article>
+
+            <article><!--Hébergements-->
+
+                <h4 id="hebergements">Hébergements à Marseille</h4>
+
+                <p>
+                    <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo chambre La Cannebière" />
+                    <p>
+                        <strong>Auberge la Cannebière</strong><br />
+                        Nuit à partir de <strong>25€</strong>
+                        <i class="fas fa-star"></i><!--étoile pleine-->
+                        <i class="far fa-star"></i><!--étoile vide-->
+                    </p>
+                </p>
+                
+                <p>
+                    <img src="images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo chambre Hôtel du port">
+                    <p>
+                        <strong>Hôtel du port</strong><br />Nuit à partir de 52<strong>€</strong>
+                        <i class="fas fa-star"></i><!--étoile pleine-->
+                        <i class="far fa-star"></i><!--étoile vide-->
+                    </p>
+                </p>
+
+                <p>
+                    <img src="images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo chambre Hôtel Les mouettes">
+                    <p>
+                        <strong>Hôtel Les mouettes</strong><br />Nuit à partir de 76<strong>€</strong>
+                        <i class="fas fa-star"></i><!--étoile pleine-->
+                        <i class="far fa-star"></i><!--étoile vide-->
+                    </p>
+                </p>
+
+                <p>
+                    <img src="images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo chambre Hôtel de la mer">
+                    <p>
+                        <strong>Hôtel de la mer</strong><br />Nuit à partir de 46<strong>€</strong>
+                        <i class="fas fa-star"></i><!--étoile pleine-->
+                        <i class="far fa-star"></i><!--étoile vide-->
+                    </p>
+                </p>
+
+                <p>
+                    <img src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo chambre Auberge Le Panier">
+                    <p>
+                        <strong>Auberge Le Panier</strong><br />Nuit à partir de 23<strong>€</strong>
+                        <i class="fas fa-star"></i><!--étoile pleine-->
+                        <i class="far fa-star"></i><!--étoile vide-->
+                    </p>
+                </p>
+
+                <p>
+                    <img src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo chambre Hôtel chez Amina">
+                    <p>
+                        <strong>Hôtel chez Amina</strong><br />Nuit à partir de 96<strong>€</strong>
+                        <i class="fas fa-star"></i><!--étoile pleine-->
+                        <i class="far fa-star"></i><!--étoile vide-->
+                    </p>
+                </p>
+
+                <p><strong>Afficher plus</strong></p>
+
 
             </article>
 
-            <aside>
+            <aside><!--Les plus populaires-->
+
+                <h4>Les plus populaires</h4>
+
+                <p><!--Icône graphique + flèche-->
+
+                <i class="fas fa-chart-line"></i>
+
+                </p>
+
+                <p>
+                    <img src="images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo chambre Hôtel Le soleil du matin">
+                    <p>
+                        <strong>Hôtel Le soleil du matin</strong><br />Nuit à partir de 128<strong>€</strong>
+                        <i class="fas fa-star"></i><!--étoile pleine-->
+                        <i class="far fa-star"></i><!--étoile vide-->
+                    </p>
+                </p>
+
+                <p>
+                    <img src="images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo Au cœur de l'eau Chambres d'hôtes">
+                    <p>
+                        <strong>Au cœur de l'eau Chambres d'hôtes</strong><br />Nuit à partir de 71<strong>€</strong>
+                        <i class="fas fa-star"></i><!--étoile pleine-->
+                        <i class="far fa-star"></i><!--étoile vide-->
+                    </p>
+                </p>
+
+                <p>
+                    <img src="images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo chambres Hôtel Tout bleu et Blanc">
+                    <p>
+                        <strong>Au cœur de l'eau Chambres d'hôtes</strong><br />Nuit à partir de 71<strong>€</strong>
+                        <i class="fas fa-star"></i><!--étoile pleine-->
+                        <i class="far fa-star"></i><!--étoile vide-->
+                    </p>
+                </p>
 
             </aside>
 
         </section>
 
 
-        <section>
+        <section><!--Activités-->
+
+            <h4 id="activites">Activités</h4>
 
         </section>
 
     </div>
 
         <footer>
+
+            <!--A propos-->
+
+            <!--Nos Hébergements-->
+
+            <!--Assistance-->
 
         </footer>
         
