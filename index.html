@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="stylereservia.css" />
+        <link rel="stylesheet" href="style.css" />
         <script src="https://kit.fontawesome.com/2897f175fe.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
     </head>
@@ -20,9 +20,11 @@
             <nav>
                     <div id="ancres">
 
-                        <a href="#hebergements">Hébergements</a><br />
-                        <a href="#activites">Activités</a><br />
-                        S'inscrire
+                        <ul>
+                            <li><a href="#hebergements">Hébergements</a></li>
+                            <li><a href="#activites">Activités</a></li>
+                            <li>S'inscrire</li>
+                        </ul>
 
                     </div>
                 
@@ -40,7 +42,7 @@
                 </p>
                 
                     <!--Champ de recherche + bouton Rechercher-->
-                    <form method="POST" action="traitement.php">
+                    <form method="POST" action="#">
                         <p>
                             <i class="fas fa-map-marker-alt"></i><!--icône map-->
                             <label for="rechercher"></label>
@@ -56,21 +58,26 @@
                 <p>Filtres</p>
 
                 <!--Liste des Filtres + icônes-->
-                <p id="liste_filtres">
-                    
-                    <i class="fas fa-money-bill-wave"></i><!--icône billet-->
-                    Économique<br />
-                    <i class="fas fa-child"></i><!--icône enfant-->
-                    Familial<br />
-                    <i class="fas fa-heart"></i><!--icône coeur-->
-                    Romantique<br />
-                    <i class="fas fa-dog"></i><!--icône chien-->
-                    Animaux autorisés<br />
+                <div id="liste_filtres">
 
-                </p>
+                        <!--Liste des icônes-->
+                        <i class="fas fa-money-bill-wave"></i><!--icône billet-->
+                        <i class="fas fa-child"></i><!--icône enfant-->
+                        <i class="fas fa-heart"></i><!--icône coeur-->
+                        <i class="fas fa-dog"></i><!--icône chien-->
+                    
+                        <!--Liste des filtres-->
+                    <ul>
+                        <li>Économique</li>
+                        <li>Familial</li>
+                        <li>Romantique</li>
+                        <li>Animaux autorisés</li>
+                    </ul>
+
+                </div>
 
                 <p><!--Réponse-->
-                    <i class="fas fa-info-circle"></i><!--Icône rond avec un i-->
+                    <i class="fas fa-info-circle"></i><!--icône rond avec un i-->
                     Plus de 500 logements sont disponibles dans cette ville
                 </p>
 
@@ -87,76 +94,76 @@
                 <h4 id="hebergements">Hébergements à Marseille</h4>
 
                 <div id="auberge_cannebiere">
+                <p>
                     <a href="images/hebergements/xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"><img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo chambre La Cannebière" /></a>
-                    <p>
-                        <strong>Auberge la Cannebière</strong><br />
-                        Nuit à partir de <strong>25€</strong><br />
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="far fa-star"></i><!--étoile vide-->
-                    </p>
+                    <strong>Auberge la Cannebière</strong><br />
+                    Nuit à partir de <strong>25€</strong><br />
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="far fa-star"></i><!--étoile vide-->
+                </p>
                 </div>
                 
                 <div id="hotel_port">
+                <p>
                     <a href="images/hebergements/xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"><img src="images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo chambre Hôtel du port" /></a>
-                    <p>
-                        <strong>Hôtel du port</strong><br />Nuit à partir de 52<strong>€</strong><br />
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                    </p>
+                    <strong>Hôtel du port</strong><br />Nuit à partir de 52<strong>€</strong><br />
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                </p>
                 </div>
 
                 <div id="hotel_mouettes">
+                <p>
                     <a href="images/hebergements/xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg"><img src="images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo chambre Hôtel Les mouettes" /></a>
-                    <p>
-                        <strong>Hôtel Les mouettes</strong><br />Nuit à partir de 76<strong>€</strong><br />
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="far fa-star"></i><!--étoile vide-->
-                    </p>
+                    <strong>Hôtel Les mouettes</strong><br />Nuit à partir de 76<strong>€</strong><br />
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="far fa-star"></i><!--étoile vide-->
+                </p>
                 </div>
 
                 <div id="hotel_mer">
+                <p>
                     <a href="images/hebergements/xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg"><img src="images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo chambre Hôtel de la mer" /></a>
-                    <p>
-                        <strong>Hôtel de la mer</strong><br />Nuit à partir de 46<strong>€</strong><br />
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="far fa-star"></i><!--étoile vide-->
-                        <i class="far fa-star"></i><!--étoile vide-->
-                    </p>
+                    <strong>Hôtel de la mer</strong><br />Nuit à partir de 46<strong>€</strong><br />
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="far fa-star"></i><!--étoile vide-->
+                    <i class="far fa-star"></i><!--étoile vide-->
+                </p>
                 </div>
 
                 <div id="auberge_panier">
+                <p>    
                     <a href="images/hebergements/xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"><img src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo chambre Auberge Le Panier" /></a>
-                    <p>
-                        <strong>Auberge Le Panier</strong><br />Nuit à partir de 23<strong>€</strong><br />
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="far fa-star"></i><!--étoile vide-->
-                    </p>
+                    <strong>Auberge Le Panier</strong><br />Nuit à partir de 23<strong>€</strong><br />
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="far fa-star"></i><!--étoile vide-->
+                </p>
                 </div>
 
                 <div id="hotel_amina">
+                <p>
                     <a href="images/hebergements/xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"><img src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo chambre Hôtel chez Amina" /></a>
-                    <p>
-                        <strong>Hôtel chez Amina</strong><br />Nuit à partir de 96<strong>€</strong><br />
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                    </p>
+                    <strong>Hôtel chez Amina</strong><br />Nuit à partir de 96<strong>€</strong><br />
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                </p>
                 </div>
 
                 <p><strong>Afficher plus</strong></p>
@@ -169,39 +176,39 @@
                 <h4>Les plus populaires <i class="fas fa-chart-line"></i><!--Icône graph--></h4>
 
                 <div id="hotel_soleil">
+                <p>
                     <a href="images/hebergements/xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"><img src="images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo chambre Hôtel Le soleil du matin" /></a>
-                    <p>
-                        <strong>Hôtel Le soleil du matin</strong><br />Nuit à partir de 128<strong>€</strong><br />
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                    </p>
+                    <strong>Hôtel Le soleil du matin</strong><br />Nuit à partir de 128<strong>€</strong><br />
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                </p>
                 </div>
 
                 <div id="coeur_de_l'eau">
+                <p>
                     <a href="images/hebergements/xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg"><img src="images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo Au cœur de l'eau Chambres d'hôtes" /></a>
-                    <p>
-                        <strong>Au cœur de l'eau Chambres d'hôtes</strong><br />Nuit à partir de 71<strong>€</strong><br />
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="far fa-star"></i><!--étoile vide-->
-                    </p>
+                    <strong>Au cœur de l'eau Chambres d'hôtes</strong><br />Nuit à partir de 71<strong>€</strong><br />
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="far fa-star"></i><!--étoile vide-->
+                </p>
                 </div>
 
                 <div id="hotel_bleu_blanc">
+                <p>
                     <a href="images/hebergements/xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg"><img src="images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo chambres Hôtel Tout bleu et Blanc" /></a>
-                    <p>
-                        <strong>Hôtel Tout bleu et Blanc</strong><br />Nuit à partir de 68<strong>€</strong><br />
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="fas fa-star"></i><!--étoile pleine-->
-                        <i class="far fa-star"></i><!--étoile vide-->
-                    </p>
+                    <strong>Hôtel Tout bleu et Blanc</strong><br />Nuit à partir de 68<strong>€</strong><br />
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="fas fa-star"></i><!--étoile pleine-->
+                    <i class="far fa-star"></i><!--étoile vide-->
+                </p>
                 </div>
 
             </aside>
@@ -214,45 +221,45 @@
                 <h4 id="activites">Activités à Marseille</h4>
     
                 <div id="vieux_port">
+                <p>
                     <a href="images/activites/xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"><img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo Vieux Port" /></a>
-                    <p>
-                        Vieux Port
-                    </p>
+                    Vieux Port
+                </p>
                 </div>
     
                 <div id="fort_pomegues">
+                <p>
                     <a href="images/activites/xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"><img src="images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo Fort de Pomègues" /></a>
-                    <p>
-                        Fort de Pomègues
-                    </p>
+                    Fort de Pomègues
+                </p>
                 </div>
     
                 <div id="iles_frioul">
+                <p>
                     <a href="images/activites/xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"><img src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo Îles du Frioul" /></a>
-                    <p>
-                        Îles du Frioul
-                    </p>
+                    Îles du Frioul
+                </p>
                 </div>
     
                 <div id="parc_calanques">
+                <p>
                     <a href="images/activites/xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"><img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo Parc National des Calanques" /></a>
-                    <p>
-                        Parc National des Calanques
-                    </p>
+                    Parc National des Calanques
+                </p>
                 </div>
     
                 <div id="notre_dame_garde">
+                <p>
                     <a href="images/activites/xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"><img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo Notre-Dame-de-la-Garde" /></a>
-                    <p>
-                        Notre-Dame-de-la-Garde
-                    </p>
+                    Notre-Dame-de-la-Garde
+                </p>
                 </div>
     
                 <div id="parc_longchamp">
+                <p>
                     <a href="images/activites/xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg"><img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo Parc Longchamp" /></a>
-                    <p>
-                        Parc Longchamp
-                    </p>
+                    Parc Longchamp
+                </p>
                 </div>
     
             </section>
@@ -264,21 +271,27 @@
         <!--A propos-->
         <h5>A propos</h5>
 
-        <p><a href="fonctionnement-du-site.html">Fonctionnement du site</a></p>
-        <p><a href="cgv.html">Conditions générales de vente</a></p>
-        <p><a href="donnees-confidentialite.html">Données et confidentialité</a></p>
+        <p>
+            <a href="#">Fonctionnement du site</a><br />
+            <a href="#">Conditions générales de vente</a><br />
+            <a href="#">Données et confidentialité</a>
+        </p>
         
         <!--Nos Hébergements-->
         <h5>Nos hébergements</h5>
 
-        <p><a href="charte-qualite.html">Charte qualité</a></p>
-        <p><a href="soumettre-hotel.html">Soumettre votre hôtel</a></p>
+        <p>
+            <a href="#">Charte qualité</a><br />
+            <a href="#">Soumettre votre hôtel</a>
+        </p>
 
         <!--Assistance-->
         <h5>Assistance</h5>
 
-        <p><a href="aide.html">Centre d'aide</a></p>
-        <p><a href="contact.html">Nous contacter</a></p>
+        <p>
+            <a href="#">Centre d'aide</a><br />
+            <a href="#">Nous contacter</a>
+        </p>
 
     </footer>
         
