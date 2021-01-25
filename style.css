@@ -16,3 +16,122 @@ body
 	font-family: 'ralewayregular', Arial, Verdana, serif;
 
 }
+
+/*navigation*/
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 10px;
+}
+
+#logo
+{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+#logo img
+{
+	width: 100px;
+	height: 60px;
+}
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+nav li
+{
+	margin-right: 15px;
+}
+
+nav a
+{
+	font-size: 1em;
+	color: black;
+	padding-bottom: 5px;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #0065FC;
+	padding-top: 30px;
+	border-top: 3px solid #0065FC;
+}
+
+#inscription
+{
+	color: #0065FC;
+	font-weight: bold;
+}
+
+/*Bloc recherche*/
+
+h3
+{
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: -12px;
+}
+
+form
+{
+	display: flex;
+	border: 1px solid #F2F2F2;
+	border-radius: 10px;
+	width: 370px;
+	height: 40px;
+	flex-direction: row;
+	justify-content: flex-start;	
+}
+
+.map
+{
+	border: 1px solid #F2F2F2;
+	border-radius: 10px 0 0 10px;
+	background-color: #F2F2F2;
+	padding: 12px 0 0 12px;
+	width: 25px;
+	height: 26px;
+	color: #0065FC;
+}
+
+input
+{
+	border: none;
+	width: 220px;
+	height: 40px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+#bouton
+{
+	border: none;
+	border-radius: 0 10px 10px 0;
+	background-color: #0065FC;
+	color: white;
+	width: 110px;
+	font-weight: bold;
+}
+
+#search
+{
+	display: none;
+}
+
+/*Bloc Filtres*/
+
+#titre, ul
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
