@@ -14,7 +14,8 @@
 body
 {
 	font-family: 'ralewayregular', Arial, Verdana, serif;
-
+	width: 1300px;
+	margin-left: 30px;
 }
 
 /*navigation*/
@@ -24,7 +25,7 @@ header
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 #logo
@@ -62,7 +63,7 @@ nav a
 nav a:hover
 {
 	color: #0065FC;
-	padding-top: 30px;
+	padding-top: 42px;
 	border-top: 3px solid #0065FC;
 }
 
@@ -100,7 +101,6 @@ form
 	padding: 12px 0 0 12px;
 	width: 25px;
 	height: 26px;
-	color: #0065FC;
 }
 
 input
@@ -129,9 +129,153 @@ input
 
 /*Bloc Filtres*/
 
-#titre, ul
+#filtres
 {
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+	font-weight: bold;
+}
+
+#titre/*, #eco, #famille, #romantique, #animaux*/
+{
+	padding-top: 12px;
+}
+
+#filtres ul
+{
+	display: flex;
+	list-style-type: none;
+}
+
+#filtres li
+{
+	padding-right: 80px;
+}
+
+#filtres i
+{
+	color: #0065FC;
+	border: 1px solid #DEEBFF;
+	border-radius: 30px;
+	background-color: #DEEBFF;
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+}
+
+#eco
+{
+	border: 2px solid #F2F2F2;
+	border-radius: 30px;
+	height: 35px;
+	margin-right: 15px;
+}
+
+#billet
+{
+	padding: 9px 3px 0px 6px;
+}
+
+#famille
+{
+	border: 2px solid #F2F2F2;
+	border-radius: 30px;
+	height: 35px;
+	margin-right: 15px;
+}
+
+#enfant
+{
+	padding: 9px 0 0 12px;
+}
+
+#romantique
+{
+	border: 2px solid #F2F2F2;
+	border-radius: 30px;
+	height: 35px;
+	margin-right: 15px;
+}
+
+#coeur
+{
+	padding: 9px 0 0 7px;
+}
+
+#animaux
+{
+	border: 2px solid #F2F2F2;
+	border-radius: 30px;
+	height: 35px;
+	margin-right: 15px;
+}
+
+#chien
+{
+	padding: 9px 0 0 6px;
+}
+
+#info
+{
+	color: white;
+	border: 2px solid #F2F2F2;
+	border-radius: 30px;
+	background-color: #0065FC;
+}
+
+/*Bloc Hébergements*/
+
+#hebergements /*Fond*/
+{
+	/*display: flex;*/
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	padding: 20px 0 0 20px;
+	width: 900px;
+}
+
+#hebergements a
+{
+	text-decoration: none;
+}
+
+#hebergements strong
+{
+	font-weight: bold;
+}
+
+#fig1
+{
+	margin-left: -0.5px;
+}
+
+#photo_cannebiere
+{
+	width: 200px;
+	height: 100px;
+	border: 3px solid white;
+	border-radius: 20px 20px 0 0;
+	/*box-shadow: 0px 2px 2px black;*/
+}
+
+#legend1
+{
+	width: 190px;
+	height: 60px;
+	border: 3px solid white;
+	border-radius: 0 0 20px 20px;
+	color: black;
+	padding-left: 10px;
+	margin-top: -6px;
+	background-color: white;
+	/*box-shadow: 2px 2px 2px black;*/
+}
+
+#grise1
+{
+	color: #F2F2F2;
+}
+
+#fig1 span 
+{
+	color: #0065FC;
 }
