@@ -674,12 +674,12 @@ aside /*Fond*/
 
 /*Bloc Activités*/
 
-#bloc2
+#activites
 {
 	font-weight: bold;
 }
 
-#bloc2 a
+#activites a
 {
 	text-decoration: none;
 	color: black;
@@ -687,7 +687,7 @@ aside /*Fond*/
 
 #titre_activites
 {
-	margin-top: 50px;
+	margin: 50px 0 0 10px;
 }
 
 #photos_activites /*Photos*/
@@ -695,7 +695,7 @@ aside /*Fond*/
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	margin-left: -40px;
+	margin-left: -30px;
 }
 
 #blocfortiles, #blocnotredamelongchamp
@@ -713,7 +713,7 @@ aside /*Fond*/
 	width: 286px;
 	height: 450px;
 	box-shadow: 1px 1px 6px #7a7d7f;
-	margin-right: -4px;
+	margin-right: -7px;
 }
 
 #photo_vieuxport
@@ -745,7 +745,7 @@ aside /*Fond*/
 	height: 260px;
 	box-shadow: 1px 1px 6px #7a7d7f;
 	margin-bottom: 22px;
-	margin-right: -4px;
+	margin-right: -7px;
 }
 
 #photo_fortpomegues
@@ -776,7 +776,7 @@ aside /*Fond*/
 	width: 286px;
 	height: 150px;
 	box-shadow: 1px 1px 6px #7a7d7f;
-	margin-right: -4px;
+	margin-right: -7px;
 }
 
 #photo_ilesfrioul
@@ -807,7 +807,7 @@ aside /*Fond*/
 	width: 286px;
 	height: 450px;
 	box-shadow: 1px 1px 6px #7a7d7f;
-	margin-right: -4px;
+	margin-right: -7px;
 }
 
 #photo_parccalanques
@@ -838,7 +838,7 @@ aside /*Fond*/
 	width: 286px;
 	height: 180px;
 	box-shadow: 1px 1px 6px #7a7d7f;
-	margin-bottom: 21px;
+	margin-bottom: 22px;
 }
 
 #photo_notredamedelagarde
@@ -888,4 +888,37 @@ aside /*Fond*/
 	padding: 10px 0 0 10px;
 	margin-top: -6px;
 	background-color: white;
+}
+
+/*Pied de page*/
+
+footer /*Fond*/
+{
+	border: 1px solid #F2F2F2;
+	background-color: #F2F2F2;
+	margin: 30px -20px -5px -50px;
+	padding-left: 60px;
+	display: flex;
+	/*justify-content: space-between;*/
+}
+
+footer a
+{
+	text-decoration: none;
+	color: black;
+}
+
+h4
+{
+	font-weight: bold;
+}
+
+#apropos
+{
+	margin-right: 200px;
+}
+
+#noshebergements
+{
+	margin-right: 250px;
 }
