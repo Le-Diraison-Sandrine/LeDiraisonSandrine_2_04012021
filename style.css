@@ -13,12 +13,18 @@
 *
 {
 	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
 }
 
 body{
 	font-family: 'ralewayregular', Arial, Verdana, serif;
-	margin-left: 30px;
-	margin-right: 20px;
+}
+
+#bloc_page{
+	/*margin: auto;*/
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 h1, h2{
@@ -228,7 +234,7 @@ input{
 .main{
 	display: flex;
 	justify-content: space-between;
-	/*width: 100%;*/
+	/*width: 95%;*/
 }
 	
 
@@ -240,8 +246,8 @@ input{
 	background-color: #F2F2F2;
 	border-radius: 20px;
 	padding: 10px 0 0 20px;
-	width: 70%;
-	margin-right: 40px;
+	width: 65%;
+	/*padding-right: 40px;*/
 }
 
 article{
@@ -254,7 +260,7 @@ article img{
 }
 
 #titre_hebergements, #suite{
-	margin-left: 20px;
+	/*margin-left: 20px;*/
 }
 
 #hebergements a{
@@ -269,7 +275,9 @@ article img{
 #encarts{
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: -20px;
+	justify-content: space-between;
+	padding-right: 20px;
+	/*margin-left: -20px;*/
 }
 
 #encarts figure{
@@ -279,6 +287,10 @@ article img{
 	border-radius: 20px;
 	box-shadow: 1px 1px 6px #7a7d7f;/*ou 0 4px 30px rgba(0 0 0 0.05)*/
 	margin-right: -1px;
+}
+
+.carte{
+	margin-bottom: 30px;
 }
 
 
@@ -651,11 +663,14 @@ aside img{
 /*Photos*/
 #photos_activites{
 	display: flex;
-	margin-left: -40px;
+	justify-content: space-between;
+	width: 99%;
+	/*margin-left: -40px;*/
 }
 
 #blocfortiles, #blocnotredamelongchamp{
 	display: flex;
+	justify-content: space-between;
 	flex-direction: column;
 }
 
@@ -836,8 +851,8 @@ aside img{
 footer{
 	border: 1px solid #F2F2F2;
 	background-color: #F2F2F2;
-	margin: 30px -41px -10px -30px;
-	padding-left: 30px;
+	/*margin: 30px -41px -10px -30px;
+	padding-left: 30px;*/
 	display: flex;
 }
 
