@@ -22,7 +22,6 @@ body{
 }
 
 #bloc_page{
-	/*margin: auto;*/
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -37,25 +36,28 @@ header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: 10px;
+	margin: 10px 20px 10px 20px;
 }
 
 #ancres{
 	display: flex;
 	flex-direction: row;
-	align-items: baseline;
+	justify-content: space-between;
+	vertical-align: middle;
+	margin-top: 20px;
+	/*align-items: baseline;*/
 }
 
 #logo{
 	display: flex;
 	flex-direction: row;
-	align-items: baseline;
+	justify-content: space-between;
+	/*align-items: baseline;*/
 }
 
 #logo img{
 	width: 30%;
 	height: auto;
-	box-sizing: border-box;
 }
 
 nav ul{
@@ -75,7 +77,7 @@ nav a{
 nav a:hover{
 	color: #0065FC;
 	border-top: 3px solid #0065FC;
-	padding-top: 23px;
+	padding-top: 27px;
 }
 
 #inscription{
@@ -88,7 +90,8 @@ nav a:hover{
 #recherche h1{
 	font-weight: bold;
 	font-size: 1.2em;
-	margin-bottom: -12px;
+	margin-top: 20px;
+	margin-bottom: 8px;
 }
 
 form{
@@ -96,8 +99,9 @@ form{
 	border: 1px solid #F2F2F2;
 	border-radius: 10px;
 	width: 370px;
-	height: 40px;
-	margin-top: 20px;	
+	height: 42px;
+	margin-top: 20px;
+	margin-bottom: 30px;	
 }
 
 .map{
@@ -123,6 +127,7 @@ input{
 	background-color: #0065FC;
 	color: white;
 	width: 110px;
+	height: 40px;
 	font-weight: bold;
 }
 
@@ -134,6 +139,7 @@ input{
 
 #filtres{
 	display: flex;
+	flex-direction: row;
 	font-weight: bold;
 	margin-top: 10px;
 }
@@ -148,7 +154,8 @@ input{
 }
 
 #titre{
-	padding-top: 12px;
+	padding-top: 10px;
+	margin-right: 20px;
 }
 
 #filtres ul{
@@ -225,7 +232,7 @@ input{
 }
 
 #reponse{
-	margin: 0 0 30px 0;
+	margin: 30px 0 30px 0;
 }
 
 
@@ -234,7 +241,6 @@ input{
 .main{
 	display: flex;
 	justify-content: space-between;
-	/*width: 95%;*/
 }
 	
 
@@ -245,9 +251,8 @@ input{
 #hebergements{
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	padding: 10px 0 0 20px;
+	padding: 30px 0 0 30px;
 	width: 65%;
-	/*padding-right: 40px;*/
 }
 
 article{
@@ -260,7 +265,7 @@ article img{
 }
 
 #titre_hebergements, #suite{
-	/*margin-left: 20px;*/
+	margin-bottom: 20px;
 }
 
 #hebergements a{
@@ -276,8 +281,7 @@ article img{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-right: 20px;
-	/*margin-left: -20px;*/
+	padding-right: 30px;
 }
 
 #encarts figure{
@@ -488,7 +492,7 @@ article img{
 aside{
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	padding: 10px 0 0 25px;
+	padding: 30px 30px 0 30px;
 	width: 30%;
 }
 
@@ -507,12 +511,12 @@ aside img{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: baseline;
+	margin-bottom: 20px;
 }
 
 #graph{
 	display: flex;
 	justify-content: flex-end;
-	margin-right: 26px;
 }
 
 /*card 1*/
@@ -657,15 +661,16 @@ aside img{
 }
 
 #titre_activites{
-	padding-top: 30px;
+	padding-top: 40px;
+	padding-bottom: 20px;
 }
 
 /*Photos*/
 #photos_activites{
 	display: flex;
 	justify-content: space-between;
-	width: 99%;
-	/*margin-left: -40px;*/
+	width: 99.6%;
+	padding-bottom: 50px;
 }
 
 #blocfortiles, #blocnotredamelongchamp{
@@ -851,28 +856,32 @@ aside img{
 footer{
 	border: 1px solid #F2F2F2;
 	background-color: #F2F2F2;
-	/*margin: 30px -41px -10px -30px;
-	padding-left: 30px;*/
 	display: flex;
+	/*justify-content: space-between;*/
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 footer a{
 	text-decoration: none;
 	color: black;
-	line-height: 1.4;
+	line-height: 1.5;
+	padding-left: 20px;
 }
 	
 
 h4{
 	font-weight: bold;
+	padding-left: 20px;
+	padding-bottom: 10px;
 }
 
 #apropos{
-	margin-right: 200px;
+	padding-right: 200px;
 }
 
 #noshebergements{
-	margin-right: 250px;
+	padding-right: 250px;
 }
 
 
@@ -884,6 +893,7 @@ h4{
 	body{
 		width: auto;
 		margin: 0px;
+		padding: 0px;
 		box-sizing: border-box;
 	}
 
@@ -892,10 +902,17 @@ h4{
 
 	header{
 		flex-direction: column;
+		margin: 0px;
+		padding: 0px;
 	}
 
 	#logo{
+		margin-top: 20px;
+	}
+
+	#logo img{
 		margin-left: 20px;
+		width: 25%;
 	}
 
 	#ancres{
@@ -923,12 +940,12 @@ h4{
 
 	nav span{
 		position: absolute;
-		top: 30px;
+		top: 40px;
 		right: 20px;
 	}
 
 	nav a:hover{
-		padding-top: 27px;
+		padding-top: 37px;
 	}
 
 	nav li a:hover{
@@ -940,37 +957,34 @@ h4{
 		color: #0065FC;
 	}
 
-	nav li:hover > a{
+	/*nav li:hover > a{
 		color: #0065FC;
-	}
+	}*/
 
 
 
 	/*bloc recherche*/
 
 	#blocrecherche{
-		margin-left: 20px;
 		padding: 0;
 	}
 
 	form{
 		margin-top: 30px;
-		margin-right: 20px;
-		width: 260px;
+		width: 100%;
 	}
 
 	.map {
-		width: 15%;
+		width: 10%;
 	}
 
 	input {
-		width: auto;
+		width: 80%;
 	}
 
 	#bouton{
-		width: 15%;
+		width: 10%;
 		border-radius: 10px;
-		/*margin-left: 80px;*/
 	}
 
 	#text_rechercher{
@@ -995,12 +1009,10 @@ h4{
 
 	#liens li{
 		margin-bottom: 10px;
-		margin-left: -40px;
-		margin-right: 50px;
 	}
 
 	#titre{
-		margin-bottom: -2px;
+		margin-bottom: 20px;
 	}
 
 
@@ -1012,19 +1024,26 @@ h4{
 		flex-direction: column;
 		width: 100%;
 		border-radius: 0;
-		padding-left: 20px;
-		padding-right: 0px;
+		/*padding-left: 20px;
+		padding-right: 0px;*/
+		margin: 0px;
+		padding: 0px;
 		order: 1;
 	}
 
+	#entete_populaires{
+		padding-top: 20px;
+	}
+
 	#encarts_populaires{
-		width: 100%;
+		width: auto;
+
 	}
 
 
 	/*card 1*/
 	#card1{
-		width: 95%;
+		width: 100%;
 		height: 150px;
 		margin-bottom: 20px;
 	}
@@ -1040,12 +1059,12 @@ h4{
 	}
 
 	#legend7 i{
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 
 	/*card 2*/
 	#card2{
-		width: 95%;
+		width: 100%;
 		height: 150px;
 		margin-bottom: 20px;
 	}
@@ -1061,12 +1080,12 @@ h4{
 	}
 
 	#legend8 i{
-		margin-top: 50px;
+		margin-top: 40px;
 	}
 
 	/*card 3*/
 	#card3{
-		width: 95%;
+		width: 100%;
 		height: 150px;
 	}
 
@@ -1082,7 +1101,7 @@ h4{
 	}
 
 	#legend9 i{
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 
 
@@ -1091,42 +1110,39 @@ h4{
 
 	.main{
 		flex-direction: column;
-		align-items: stretch;
 		margin: 0px;
-		padding: 0;
+		padding: 0px;
 		width: 100%;
 	}
 
 	article{
 		width: 100%;
 		margin: 0px;
-		padding: 0;
+		padding: 0px;
 		order: 2
 	}
 
 	#hebergements{
 		background: none;
-		margin: 0;
-		padding-left: 0px
-		padding: 0;
+		margin: 0px;
+		padding: 0px;
 		width: 100%;
 	}
 
 	#encarts{
 		flex-direction: column;
-		margin: 0;
-		padding: 0;
+		margin: 0px;
+		padding: 0px;
 		width: 100%;
 	}
 
-	#titre_hebergements, #suite{
-		margin-left: 0;
+	#titre_hebergements{
+		padding-top: 40px;
 	}
 
 	#encarts figure{
-		width: 95%;
+		width: 100%;
 		height: 200px;
-		margin: 0 0 20px 0;
 	}
 
 
@@ -1267,19 +1283,10 @@ h4{
 
 	/*Activités*/
 
-	#activites{
-		padding-left: 20px;
-	}
-
 	#photos_activites{
 		display: flex;
 		flex-direction: column;
-		width: 95%;
-	}
-
-	#encart_parccalanques{
-		margin-left: 40px;
-		padding: 0;
+		width: 100%;
 	}
 
 
@@ -1288,6 +1295,7 @@ h4{
 	#encart_vieuxport{
 		width: 100%;
 		height: 200px;
+		margin-bottom: 25px;
 	}
 
 	#photo_vieuxport{
@@ -1326,6 +1334,7 @@ h4{
 	#encart_ilesfrioul{
 		width: 100%;
 		height: 200px;
+		margin-bottom: 25px;
 	}
 
 	#photo_ilesfrioul{
@@ -1345,6 +1354,7 @@ h4{
 	#encart_parccalanques{
 		width: 100%;
 		height: 200px;
+		margin-bottom: 25px;
 	}
 
 	#photo_parccalanques{
@@ -1383,7 +1393,7 @@ h4{
 	#encart_parclongchamp{
 		width: 100%;
 		height: 200px;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
 	}
 
 	#photo_parclongchamp{
@@ -1403,26 +1413,13 @@ h4{
 
 	footer{
 		flex-direction: column;
-		width: 100%;
+		/*width: 100%;*/
 		margin: 0px;
-		padding-left: 20px;
 	}
 
-
-
-	/*problème de scroll en bas*/
-
-	
-	#hebergements {
-		margin-left: 0px;
+	#apropos,
+	#noshebergements{
+		margin-bottom: 30px;
 	}
-
-	
-	#activites{
-		margin-left: 0px;
-	}
-
-
-
 
 }
