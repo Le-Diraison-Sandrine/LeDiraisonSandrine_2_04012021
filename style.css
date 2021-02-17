@@ -43,21 +43,18 @@ header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	vertical-align: middle;
 	margin-top: 20px;
-	/*align-items: baseline;*/
 }
 
 #logo{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	/*align-items: baseline;*/
 }
 
 #logo img{
-	width: 30%;
-	height: auto;
+	width: 110px;
+	height: 50px;
 }
 
 nav ul{
@@ -297,18 +294,28 @@ article img{
 	margin-bottom: 30px;
 }
 
+/*Taille des photos*/
 
-
-/*carte 1*/
-
-#photo_cannebiere{
+#photo_cannebiere,
+#photo_hduport,
+#photo_hlesmouettes,
+#photo_hdelamer,
+#photo_lepanier,
+#photo_hamina {
 	width: 224px;
 	height: 110px;
 	border: 3px solid white;
 	border-radius: 20px 20px 0 0;
 }
 
-#legend1{
+/*Taille des légendes*/
+
+#legend1,
+#legend2,
+#legend3,
+#legend4,
+#legend5,
+#legend6 {
 	width: 224px;
 	height: 70px;
 	border: 3px solid white;
@@ -319,9 +326,23 @@ article img{
 	background-color: white;
 }
 
-#fig1 i{
+/*Espace des étoiles*/
+
+#fig1 i, 
+#fig3 i,
+#fig4 i,
+#fig5 i{
 	padding-top: 8px;
 }
+
+#fig2 i,
+#fig6 i{
+	color: #0065FC;
+	padding-top: 8px;
+}
+
+
+/*carte 1*/
 
 /*icônes bleues*/
 #fig1 span{
@@ -333,54 +354,7 @@ article img{
 	color: #F2F2F2;
 }
 
-/*carte 2*/
-
-#photo_hduport{
-	width: 224px;
-	height: 110px;
-	border: 3px solid white;
-	border-radius: 20px 20px 0 0;
-}
-
-#legend2{
-	width: 224px;
-	height: 70px;
-	border: 3px solid white;
-	border-radius: 0 0 20px 20px;
-	color: black;
-	padding-left: 10px;
-	margin-top: -6px;
-	background-color: white;
-}
-
-#fig2 i{
-	color: #0065FC;
-	padding-top: 8px;
-}
-
 /*carte 3*/
-
-#photo_hlesmouettes{
-	width: 224px;
-	height: 110px;
-	border: 3px solid white;
-	border-radius: 20px 20px 0 0;
-}
-
-#legend3{
-	width: 224px;
-	height: 70px;
-	border: 3px solid white;
-	border-radius: 0 0 20px 20px;
-	color: black;
-	padding-left: 10px;
-	margin-top: -6px;
-	background-color: white;
-}
-
-#fig3 i{
-	padding-top: 8px;
-}
 
 /*icônes bleues*/
 #fig3 span{
@@ -394,28 +368,6 @@ article img{
 
 /*carte 4*/
 
-#photo_hdelamer{
-	width: 224px;
-	height: 110px;
-	border: 3px solid white;
-	border-radius: 20px 20px 0 0;
-}
-
-#legend4{
-	width: 224px;
-	height: 70px;
-	border: 3px solid white;
-	border-radius: 0 0 20px 20px;
-	color: black;
-	padding-left: 10px;
-	margin-top: -6px;
-	background-color: white;
-}
-
-#fig4 i{
-	padding-top: 8px;
-}
-
 /*icônes bleues*/
 #ibleues{
 	color: #0065FC;
@@ -428,28 +380,6 @@ article img{
 
 /*carte 5*/
 
-#photo_lepanier{
-	width: 224px;
-	height: 110px;
-	border: 3px solid white;
-	border-radius: 20px 20px 0 0;
-}
-
-#legend5{
-	width: 224px;
-	height: 70px;
-	border: 3px solid white;
-	border-radius: 0 0 20px 20px;
-	color: black;
-	padding-left: 10px;
-	margin-top: -6px;
-	background-color: white;
-}
-
-#fig5 i{
-	padding-top: 8px;
-}
-
 /*icônes bleues*/
 #fig5 span{
 	color: #0065FC;
@@ -460,30 +390,6 @@ article img{
 	color: #F2F2F2;
 }
 
-/*carte 6*/
-
-#photo_hamina{
-	width: 224px;
-	height: 110px;
-	border: 3px solid white;
-	border-radius: 20px 20px 0 0;
-}
-
-#legend6{
-	width: 224px;
-	height: 70px;
-	border: 3px solid white;
-	border-radius: 0 0 20px 20px;
-	color: black;
-	padding-left: 10px;
-	margin-top: -6px;
-	background-color: white;
-}
-
-#fig6 i{
-	color: #0065FC;
-	padding-top: 8px;
-}
 
 
 /*Bloc les plus populaires*/
@@ -499,7 +405,6 @@ aside{
 aside img{
 	object-fit: cover;
 }
-
 
 #lespopulaires a{
 	text-decoration: none;
@@ -519,44 +424,11 @@ aside img{
 	justify-content: flex-end;
 }
 
-/*card 1*/
 
-#card1{
-	display: flex;
-	flex-direction: row;
-	margin: 15px 0 35px 0;
-	width: 330px;
-	height: 116px;
-	border: 1px solid white;
-	border-radius: 20px;
-	box-shadow: 1px 1px 6px #7a7d7f;
-}
-
-#photo_hsoleildumatin{
-	width: 120px;
-	height: 114px;
-	border: 3px solid white;
-	border-radius: 20px 0 0 20px;
-}
-
-#legend7{
-	width: 220px;
-	height: 114px;
-	border: 3px solid white;
-	border-radius: 0 20px 20px 0;
-	color: black;
-	padding: 10px 0 0 10px;
-	background-color: white;
-}
-
-#legend7 i{
-	color: #0065FC;
-	margin-top: 40px;
-}
-
-/*card 2*/
-
-#card2{
+/*Taille des card*/
+#card1,
+#card2,
+#card3 {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 35px;
@@ -567,14 +439,20 @@ aside img{
 	box-shadow: 1px 1px 6px #7a7d7f;
 }
 
-#photo_chaucoeurdeleau{
+/*Taille des photos*/
+#photo_hsoleildumatin,
+#photo_chaucoeurdeleau,
+#photo_hbleublanc {
 	width: 120px;
 	height: 114px;
 	border: 3px solid white;
 	border-radius: 20px 0 0 20px;
 }
 
-#legend8{
+/*Taille des légendes*/
+#legend7,
+#legend8,
+#legend9 {
 	width: 220px;
 	height: 114px;
 	border: 3px solid white;
@@ -583,6 +461,15 @@ aside img{
 	padding: 10px 0 0 10px;
 	background-color: white;
 }
+
+/*card 1*/
+
+#legend7 i{
+	color: #0065FC;
+	margin-top: 40px;
+}
+
+/*card 2*/
 
 #legend8 i{
 	margin-top: 20px;
@@ -599,34 +486,6 @@ aside img{
 }
 
 /*card 3*/
-
-#card3{
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 35px;
-	width: 330px;
-	height: 116px;
-	border: 1px solid white;
-	border-radius: 20px;
-	box-shadow: 1px 1px 6px #7a7d7f;
-}
-
-#photo_hbleublanc{
-	width: 120px;
-	height: 114px;
-	border: 3px solid white;
-	border-radius: 20px 0 0 20px;
-}
-
-#legend9{
-	width: 220px;
-	height: 114px;
-	border: 3px solid white;
-	border-radius: 0 20px 20px 0;
-	color: black;
-	padding: 10px 0 0 10px;
-	background-color: white;
-}
 
 #legend9 i{
 	margin-top: 40px;
@@ -857,7 +716,6 @@ footer{
 	border: 1px solid #F2F2F2;
 	background-color: #F2F2F2;
 	display: flex;
-	/*justify-content: space-between;*/
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -962,10 +820,6 @@ h4{
 		color: #0065FC;
 	}
 
-	/*nav li:hover > a{
-		color: #0065FC;
-	}*/
-
 
 
 	/*bloc recherche*/
@@ -982,6 +836,7 @@ h4{
 
 	.map {
 		width: 10%;
+		padding: 12px;
 	}
 
 	input {
@@ -1037,68 +892,51 @@ h4{
 
 	#encarts_populaires{
 		width: 100%;
-
 	}
 
-
-	/*card 1*/
-	#card1{
+	/*Taille des cards*/
+	#card1,
+	#card2 {
 		width: 100%;
 		height: 150px;
 		margin-bottom: 20px;
 	}
 
-	#photo_hsoleildumatin{
+	#card3 {
+		width: 100%;
+		height: 150px;
+	}
+
+	/*Taille des photos*/
+	#photo_hsoleildumatin,
+	#photo_chaucoeurdeleau,
+	#photo_hbleublanc {
 		width: 140px;
 		height: 148px;
 	}
 
-	#legend7{
+	/*Taille des légendes*/
+	#legend7,
+	#legend8,
+	#legend9 {
 		width: 100%;
 		height: 148px;
 	}
+
+
+	/*card 1*/
 
 	#legend7 i{
 		margin-top: 60px;
 	}
 
 	/*card 2*/
-	#card2{
-		width: 100%;
-		height: 150px;
-		margin-bottom: 20px;
-	}
-
-	#photo_chaucoeurdeleau{
-		width: 140px;
-		height: 148px;
-	}
-
-	#legend8{
-		width: 100%;
-		height: 148px;
-	}
 
 	#legend8 i{
 		margin-top: 40px;
 	}
 
 	/*card 3*/
-	#card3{
-		width: 100%;
-		height: 150px;
-	}
-
-	#photo_hbleublanc{
-		width: 140px;
-		height: 148px;
-		object-fit: cover;
-	}
-
-	#legend9{
-		width: 100%;
-		height: 148px;
-	}
 
 	#legend9 i{
 		margin-top: 60px;
@@ -1141,137 +979,48 @@ h4{
 		height: 200px;
 	}
 
-
-	/*carte 1*/
-	#fig1{
+	/*Taille des cartes*/
+	#fig1,
+	#fig2,
+	#fig3,
+	#fig4,
+	#fig5,
+	#fig6 {
 		width: 100%;
 		height: auto;
 	}
 
-	#photo_cannebiere{
+	/*Taille des photos*/
+	#photo_cannebiere,
+	#photo_hduport,
+	#photo_hlesmouettes,
+	#photo_hdelamer,
+	#photo_lepanier,
+	#photo_hamina {
 		width: 100%;
 		height: 60%;
 	}
 
-	#legend1{
+	/*Taille des légendes*/
+	#legend1,
+	#legend2,
+	#legend3,
+	#legend4,
+	#legend5,
+	#legend6 {
 		width: 100%;
 		height: 40%;
 		padding-left: 8px;
 		padding-top: 2px;
 	}
 
-	#fig1 i{
-		padding-top: 10px;
-	}
-
-	/*carte 2*/
-	#fig2{
-		width: 100%;
-		height: auto;
-	}
-
-	#photo_hduport{
-		width: 100%;
-		height: 60%;
-	}
-
-	#legend2{
-		width: 100%;
-		height: 40%;
-		padding-left: 8px;
-		padding-top: 2px;
-	}
-
-	#fig2 i{
-		padding-top: 10px;
-	}
-
-	/*carte 3*/
-	#fig3{
-		width: 100%;
-		height: 50%;
-	}
-
-	#photo_hlesmouettes{
-		width: 100%;
-		height: 60%;
-		/*object-fit: cover;*/
-	}
-
-	#legend3{
-		width: 100%;
-		height: 40%;
-		padding-left: 8px;
-		padding-top: 2px;
-	}
-
-	#fig3 i{
-		padding-top: 10px;
-	}
-
-	/*carte 4*/
-	#fig4{
-		width: 100%;
-		height: auto;
-	}
-
-	#photo_hdelamer{
-		width: 100%;
-		height: 60%;
-	}
-
-	#legend4{
-		width: 100%;
-		height: 40%;
-		padding-left: 8px;
-		padding-top: 2px;
-	}
-
-	#fig4 i{
-		padding-top: 10px;
-	}
-
-	/*carte 5*/
-	#fig5{
-		width: 100%;
-		height: auto;
-	}
-
-	#photo_lepanier{
-		width: 100%;
-		height: 60%;
-	}
-
-	#legend5{
-		width: 100%;
-		height: 40%;
-		padding-left: 8px;
-		padding-top: 2px;
-	}
-
-	#fig5 i{
-		padding-top: 10px;
-	}
-
-	/*carte 6*/
-	#fig6{
-		width: 100%;
-		height: auto;
-	}
-
-	#photo_hamina{
-		width: 100%;
-		height: 60%;
-	}
-
-	#legend6{
-		width: 100%;
-		height: 40%;
-		padding-left: 8px;
-		padding-top: 2px;
-	}
-
-	#fig6 i{
+	/*Espace des &toiles*/
+	#fig1 i,
+	#fig2 i,
+	#fig3 i,
+	#fig4 i,
+	#fig5 i,
+	#fig6 i {
 		padding-top: 10px;
 	}
 
@@ -1290,124 +1039,46 @@ h4{
 		width: 100%;
 	}
 
-
-	/*carte Vieux Port*/
-
-	#encart_vieuxport{
+	/*Tailles des encarts*/
+	#encart_vieuxport,
+	#encart_ilesfrioul, 
+	#encart_parccalanques,
+	#encart_parclongchamp {
 		width: 100%;
 		height: 200px;
 		margin-bottom: 25px;
 	}
 
-	#photo_vieuxport{
-		width: 100%;
-		height: 70%;
-	}
-
-	#legend_vieuxport{
-		width: 100%;
-		height: 30%;
-		padding-left: 8px;
-		padding-top: 15px;
-	}
-
-	/*carte Fort de Pomègues*/
-
-	#encart_fortpomegues{
+	#encart_fortpomegues,
+	#encart_notredamedelagarde {
 		width: 100%;
 		height: 200px;
 	}
 
-	#photo_fortpomegues{
+	/*Taille des photos*/
+	#photo_vieuxport,
+	#photo_fortpomegues,
+	#photo_ilesfrioul,
+	#photo_parccalanques,
+	#photo_notredamedelagarde,
+	#photo_parclongchamp {
 		width: 100%;
 		height: 70%;
 	}
 
-	#legend_fortpomegues{
+	/*Taille des légendes*/
+	#legend_vieuxport,
+	#legend_fortpomegues,
+	#legend_ilesfrioul,
+	#legend_parccalanques,
+	#legend_notredamedelagarde,
+	#legend_parclongchamp {
 		width: 100%;
 		height: 30%;
 		padding-left: 8px;
 		padding-top: 15px;
 	}
 
-	/*carte Iles du Frioul*/
-
-	#encart_ilesfrioul{
-		width: 100%;
-		height: 200px;
-		margin-bottom: 25px;
-	}
-
-	#photo_ilesfrioul{
-		width: 100%;
-		height: 70%;
-	}
-
-	#legend_ilesfrioul{
-		width: 100%;
-		height: 30%;
-		padding-left: 8px;
-		padding-top: 15px;
-	}
-
-	/*carte Parc National des Calanques*/
-
-	#encart_parccalanques{
-		width: 100%;
-		height: 200px;
-		margin-bottom: 25px;
-	}
-
-	#photo_parccalanques{
-		width: 100%;
-		height: 70%;
-	}
-
-	#legend_parccalanques{
-		width: 100%;
-		height: 30%;
-		padding-left: 8px;
-		padding-top: 15px;
-	}
-
-	/*carte Notre Dame de la Garde*/
-
-	#encart_notredamedelagarde{
-		width: 100%;
-		height: 200px;
-	}
-
-	#photo_notredamedelagarde{
-		width: 100%;
-		height: 70%;
-	}
-
-	#legend_notredamedelagarde{
-		width: 100%;
-		height: 30%;
-		padding-left: 8px;
-		padding-top: 15px;
-	}
-
-	/*carte Parc Longchamp*/
-
-	#encart_parclongchamp{
-		width: 100%;
-		height: 200px;
-		margin-bottom: 20px;
-	}
-
-	#photo_parclongchamp{
-		width: 100%;
-		height: 70%;
-	}
-
-	#legend_parclongchamp{
-		width: 100%;
-		height: 30%;
-		padding-left: 8px;
-		padding-top: 15px;
-	}
 
 
 	/*footer*/
